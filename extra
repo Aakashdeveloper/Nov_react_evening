@@ -1,0 +1,84 @@
+All Code compile over Server
+
+React is frontend
+
+>>>Node<<<
+compile
+Build
+Mange Packages
+
+npm => Node Package Manger
+
+
+local Package/Dependeinces 
+> local to folder
+global package/Dependeinces
+> globally installed in system
+
+
+JSON => Javascript Object Notation
+[
+    {
+        name:"a",
+        class:1
+    },
+    {
+        name:"b",
+        class:2
+    }
+]
+
+package.JSON
+> main
+> to manage Packages
+> to start app
+> to provide description of application
+
+
+/***********************
+Step to create package.JSON
+***********************/
+** You must nodeJs
+> naviagte to folder using command prompt
+> npm init
+> Answer all questions
+> type 'yes'
+
+/***********************
+Step to install local package
+***********************/
+> naviagte to folder using command prompt
+> npm install zone.js / npm i zone.js
+
+** never share code with node_module
+** whenever we got app from some
+    always run npm install
+
+^ always install latest version
+~ install latest minor verison
+blank  always install exact version
+
+16.12.1 =>   16.12.2  16.22.99
+=> 16.13.1
+
+
+What go global?
+> package that help to create, deploy or build
+> Starter package 
+
+/***********************
+Step to install local package
+***********************/
+>>>Win<<<
+> run cmd as admin
+> naviagte to folder using command prompt
+> npm i -g @aakashdeveeloper/create-node-app
+
+>>mac/linux<<<<
+> naviagte to folder using command prompt
+> sudo npm i -g @aakashdeveloper/create-node-app
+
+
+/***********************
+Step to start with react
+***********************/
