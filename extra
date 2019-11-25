@@ -82,3 +82,28 @@ Step to install local package
 /***********************
 Step to start with react
 ***********************/
+>> npm i -g create-react-app
+>> create-react-app firstapp
+>> cd firstapp
+>> npm start
+>> localhost:3000
+
+
+Functional                                  Class Base
+Light in weigh as compare to class          Heavy as compare to Functional
+Cannot handle State                         Can Handle State
+Dum                                         Intelligent
+This is usee for content display            Logic Content
+
+
+
+function add(a,b){
+    return a+b
+}
+
+add(1,2)
+ 
+
+ const add = (a,b) => {
+     return a+b
+ }
