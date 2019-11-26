@@ -107,3 +107,23 @@ add(1,2)
  const add = (a,b) => {
      return a+b
  }
+
+ var a= 10
+ a > 10 ? "ok":"not ok"
+
+
+ State
+ > Local variable 
+
+ Prop is medium to send data
+
+
+Component A     ==Props=>      Component B
+ State A                       State A1
+
+
+ <a href="">
+ <img src="">
+
+ https://www.w3schools.com/jsref/jsref_filter.asp 
+ https://www.w3schools.com/jsref/jsref_map.asp 
