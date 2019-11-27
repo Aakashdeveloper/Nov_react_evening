@@ -127,3 +127,12 @@ Component A     ==Props=>      Component B
 
  https://www.w3schools.com/jsref/jsref_filter.asp 
  https://www.w3schools.com/jsref/jsref_map.asp 
+
+
+ var a = [0,1,2,3]
+
+ a.map((data) => {return data*1})
+ will return whole array after applying Logic
+
+ a.filter((data) => {return data*1})
+ only return those value for which ouput is true

@@ -9,8 +9,13 @@ class App extends Component {
         super()
         
         this.state={
-            news:JSON
+            news:JSON,
+            filtered:JSON
         }
+    }
+
+    filterNews(userText){
+
     }
 
 
@@ -18,7 +23,7 @@ class App extends Component {
         console.log(this.state.news)
         return(
             <div>
-                <Header/>
+                <Header userChoicee={(data) => {this.filterNews(data)}}/>
                 <NewsList newsdata={this.state.news}/>
             </div>
         )
@@ -26,4 +31,9 @@ class App extends Component {
 }
 
 
+
+/*
+pareent to child use props
+child to parent one callback functiiom
+*/
 ReactDom.render(<App/>,document.getElementById('root') )
