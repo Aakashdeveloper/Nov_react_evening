@@ -12,9 +12,9 @@ class Header extends Component{
     }
 
     inputChange(event){
-        console.log(event.target.value)
+        // console.log(event.target.value)
         this.setState({keywords:event.target.value?event.target.value:"User Input"})
-        this.props.newsdata(event.target.value)
+        this.props.userChoice(event.target.value)
     }
 
     render(){

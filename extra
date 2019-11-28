@@ -134,5 +134,19 @@ Component A     ==Props=>      Component B
  a.map((data) => {return data*1})
  will return whole array after applying Logic
 
+ var a = [0,1,2,3]
  a.filter((data) => {return data*1})
  only return those value for which ouput is true
+
+ var city = ["Dubai", "london", "Newyork", "Delhi", "Helsinki"]
+undefined
+city.indexOf('london')
+1
+city.indexOf('Amsterdam')
+-1
+city.indexOf('Delhi')
+3
+city.indexOf('paris')
+-1
+
+npm i react-router-dom

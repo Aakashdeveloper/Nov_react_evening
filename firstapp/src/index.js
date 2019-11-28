@@ -15,25 +15,30 @@ class App extends Component {
     }
 
     filterNews(userText){
+        // console.log("in filter",userText)
+        const output = this.state.news.filter((data) => {
+            return (data.title.toLowerCase().indexOf(userText.toLowerCase()) > -1 ||
+                    data.feed.toLowerCase().indexOf(userText.toLowerCase()) > -1)
+        })
+        this.setState({filtered:output})
 
     }
 
 
     render(){
-        console.log(this.state.news)
+        // console.log(this.state.news)
         return(
             <div>
-                <Header userChoicee={(data) => {this.filterNews(data)}}/>
-                <NewsList newsdata={this.state.news}/>
+                <Header userChoice={(data) => {this.filterNews(data)}}/>
+                <NewsList newsdata={this.state.filtered}/>
             </div>
         )
     }
 }
-
-
-
 /*
+ var a = [0,1,2,3]
+ a.filter((data) => {return data*1})
 pareent to child use props
-child to parent one callback functiiom
+child to parent one callback function
 */
 ReactDom.render(<App/>,document.getElementById('root') )
