@@ -150,3 +150,10 @@ city.indexOf('paris')
 -1
 
 npm i react-router-dom
+
+json-server
+
+
+npm i -g json-server
+
+json-server --watch db.json --port 8900
