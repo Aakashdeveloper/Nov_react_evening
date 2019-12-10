@@ -1,6 +1,7 @@
 import React ,{Component} from 'react';
 import { connect} from 'react-redux';
 import * as actions from '../actions';
+import ListView from '../component/ListView';
 
 class App extends Component {
 
@@ -11,12 +12,19 @@ class App extends Component {
     render(){
         return(
             <div>
-                hiii
+                <ListView list={this.props.data}></ListView>
             </div>
         )
     }
 
 }
 
+function mapStateToProps(state){
+    console.log(state)
+    return{
+        data:state.movies
+    }
+}
 
-export default connect(App);
+
+export default connect(mapStateToProps,actions)(App);
